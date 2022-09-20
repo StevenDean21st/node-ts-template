@@ -1,0 +1,50 @@
+{
+  "name": "",
+  "version": "0.1.0",
+  "description": "",
+  "author": "",
+  "license": "MIT",
+  "main": "index.js",
+  "type": "module",
+  "types": "index.d.ts",
+  "keywords": [],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "scripts": {
+    "init": "pnpm install -D jest nodemon ts-node typescript @types/node",
+    "dev": "nodemon lib/index.ts",
+    "build": "tsc --build --verbose",
+    "build:declarations": "tsc --declaration --emitDeclarationOnly --declarationDir ./types",
+    "preview": "nodemon bin/index.js",
+    "publish": "npm publish"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      ".git",
+      "node_modules/",
+      "types/",
+      "dist/"
+    ],
+    "watch": [
+      "lib/"
+    ],
+    "execMap": {
+      "ts": "node --loader ts-node/esm"
+    },
+    "env": {
+      "NODE_ENV": "development"
+    },
+    "ext": "js,json,ts"
+  },
+  "files": [
+  ]
+}
