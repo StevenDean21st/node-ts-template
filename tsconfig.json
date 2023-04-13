@@ -4,13 +4,13 @@
         "target": "esnext",
         "sourceMap": false,
         "rootDir": "./lib",
-        "outDir": "./dist",
+        "outDir": "./bin",
         "moduleResolution": "node",
         "allowSyntheticDefaultImports": true
     },
     "exclude": [
         "node_modules",
-        "dist",
+        "bin",
         "types"
     ]
 }
