@@ -32,7 +32,7 @@
       ".git",
       "node_modules/",
       "types/",
-      "dist/"
+      "bin/"
     ],
     "watch": [
       "lib/"
