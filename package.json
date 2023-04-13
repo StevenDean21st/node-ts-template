@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "node-ts-template",
   "version": "0.1.0",
   "description": "",
   "author": "",
@@ -20,31 +20,10 @@
   },
   "scripts": {
     "init": "pnpm install -D jest nodemon ts-node typescript @types/node",
-    "dev": "nodemon lib/index.ts",
+    "dev": "nodemon --exec ts-node lib/index.ts --project ./tsconfig.json",
     "build": "tsc --build --verbose",
     "build:declarations": "tsc --declaration --emitDeclarationOnly --declarationDir ./types",
-    "preview": "nodemon bin/index.js",
+    "run": "node bin/index.js",
     "publish": "npm publish"
-  },
-  "nodemonConfig": {
-    "restartable": "rs",
-    "ignore": [
-      ".git",
-      "node_modules/",
-      "types/",
-      "bin/"
-    ],
-    "watch": [
-      "lib/"
-    ],
-    "execMap": {
-      "ts": "node --loader ts-node/esm"
-    },
-    "env": {
-      "NODE_ENV": "development"
-    },
-    "ext": "js,json,ts"
-  },
-  "files": [
-  ]
+  }
 }

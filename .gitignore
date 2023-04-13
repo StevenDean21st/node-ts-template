@@ -2,7 +2,12 @@
 .vscode
 .idea
 
-### Node template
+### Node
+
+# Build
+bin
+dist
+
 # Logs
 logs
 *.log
@@ -87,7 +92,6 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-dist
 
 # Gatsby files
 .cache/
