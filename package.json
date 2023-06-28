@@ -1,29 +1,14 @@
 {
   "name": "node-ts-template",
-  "version": "0.1.0",
-  "description": "",
-  "author": "",
-  "license": "MIT",
-  "main": "index.js",
+  "version": "0.0.0",
+  "main": "bin/index.js",
   "type": "module",
   "types": "index.d.ts",
-  "keywords": [],
-  "publishConfig": {
-    "access": "public"
-  },
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
-  "engines": {
-    "node": ">=14.0.0"
-  },
   "scripts": {
-    "init": "pnpm install -D jest nodemon ts-node typescript @types/node",
+    "init": "pnpm install -D nodemon ts-node typescript @types/node",
     "dev": "nodemon --exec ts-node lib/index.ts --project ./tsconfig.json",
+    "dev:nowatch": "ts-node lib/index.ts --project ./tsconfig.json",
     "build": "tsc --build --verbose",
-    "build:declarations": "tsc --declaration --emitDeclarationOnly --declarationDir ./types",
-    "run": "node bin/index.js",
-    "publish": "npm publish"
+    "start": "node bin/index.js"
   }
 }

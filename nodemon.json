@@ -1,0 +1,10 @@
+{
+  "env": {
+  },
+  "ignoreRoot": [
+    "./bin"
+  ],
+  "watch": [
+    "./lib"
+  ]
+}
