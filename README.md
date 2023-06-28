@@ -28,7 +28,7 @@ JavaScript 兼容性相关配置已设置，可以直接导入 JavaScript 包。
 
 ## TS Node 配置
 
-`/tsconfig.json`中默认配置了`ts-node`的相关配置，使用`npm run ts-node`来启动开发模式。
+`/tsconfig.json`中默认包含`ts-node`的相关配置。
 
 ## ignore 文件配置
 
